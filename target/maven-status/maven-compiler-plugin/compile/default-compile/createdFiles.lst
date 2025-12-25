@@ -1,0 +1,12 @@
+project\gui\ParentDashboardView.class
+project\util\JsonUtils$LocalDateAdapter.class
+project\model\Wish.class
+project\service\UserService.class
+project\service\WishService.class
+project\KidTaskApp.class
+project\gui\LoginView.class
+project\service\TaskService.class
+project\gui\KidDashboardView.class
+project\model\Task.class
+project\util\JsonUtils.class
+project\model\User.class

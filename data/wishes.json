@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "name": "Oyuncak Bebek",
+    "description": "Pembe elbiseli barbie bebek istiyorum.",
+    "requiredPoints": 50,
+    "requiredLevel": 1,
+    "approved": true,
+    "purchased": true,
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 2,
+    "name": "Parka Gitmek",
+    "description": "Hafta sonu lunaparka gidelim.",
+    "requiredPoints": 100,
+    "requiredLevel": 2,
+    "approved": true,
+    "purchased": true,
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 3,
+    "name": "Tablet Saati",
+    "description": "1 saat fazladan tablet izlemek.",
+    "requiredPoints": 50,
+    "requiredLevel": 1,
+    "approved": true,
+    "purchased": true,
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 4,
+    "name": "Lego Seti",
+    "description": "Polis istasyonu legosu.",
+    "requiredPoints": 60,
+    "requiredLevel": 1,
+    "approved": true,
+    "purchased": true,
+    "kidId": "kid-onur-002"
+  },
+  {
+    "id": 5,
+    "name": "Sinema Bileti",
+    "description": "Yeni çıkan Süper Kahraman filmine gitmek.",
+    "requiredPoints": 120,
+    "requiredLevel": 2,
+    "approved": true,
+    "purchased": true,
+    "kidId": "kid-onur-002"
+  },
+  {
+    "id": 6,
+    "name": "Uzaktan Kumandalı Araba",
+    "description": "Kırmızı yarış arabası.",
+    "requiredPoints": 100,
+    "requiredLevel": 4,
+    "approved": true,
+    "purchased": true,
+    "kidId": "kid-onur-002"
+  },
+  {
+    "id": 7,
+    "name": "kahve",
+    "description": "starbucks",
+    "requiredPoints": 50,
+    "requiredLevel": 1,
+    "approved": true,
+    "purchased": true,
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 8,
+    "name": "şapka",
+    "description": "istiyom",
+    "requiredPoints": 50,
+    "requiredLevel": 1,
+    "approved": true,
+    "purchased": true,
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 10,
+    "name": "deneme1",
+    "description": "1",
+    "requiredPoints": 50,
+    "requiredLevel": 0,
+    "approved": true,
+    "purchased": true,
+    "kidId": "c9e2047b-f8ea-4292-9d13-88882813cfb3"
+  },
+  {
+    "id": 11,
+    "name": "aaaa",
+    "description": "bbb",
+    "requiredPoints": 80,
+    "requiredLevel": 1,
+    "approved": true,
+    "purchased": true,
+    "kidId": "c9e2047b-f8ea-4292-9d13-88882813cfb3"
+  },
+  {
+    "id": 12,
+    "name": "sa",
+    "description": "as",
+    "requiredPoints": 500,
+    "requiredLevel": 1,
+    "approved": true,
+    "purchased": false,
+    "kidId": "kid-onur-002"
+  },
+  {
+    "id": 13,
+    "name": "salam",
+    "description": "sosis",
+    "requiredPoints": 150,
+    "requiredLevel": 1,
+    "approved": true,
+    "purchased": false,
+    "kidId": "5948698b-eaab-4ddb-aced-5c412e0b5e0d"
+  },
+  {
+    "id": 14,
+    "name": "sa",
+    "description": "...",
+    "requiredPoints": 50,
+    "requiredLevel": 1,
+    "approved": true,
+    "purchased": false,
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 15,
+    "name": "ssss",
+    "description": "...",
+    "requiredPoints": 50,
+    "requiredLevel": 1,
+    "approved": true,
+    "purchased": false,
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 16,
+    "name": "dasd",
+    "description": "...",
+    "requiredPoints": 50,
+    "requiredLevel": 1,
+    "approved": true,
+    "purchased": false,
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 17,
+    "name": "asdafghjkhgfds",
+    "description": "...",
+    "requiredPoints": 50,
+    "requiredLevel": 1,
+    "approved": true,
+    "purchased": false,
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 18,
+    "name": "sssss",
+    "description": "...",
+    "requiredPoints": 100,
+    "requiredLevel": 1,
+    "approved": true,
+    "purchased": false,
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 19,
+    "name": "dev bir dürüm ye",
+    "description": "...",
+    "requiredPoints": 3169,
+    "requiredLevel": 11,
+    "approved": true,
+    "purchased": false,
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 20,
+    "name": "deasdasdasd",
+    "description": "...",
+    "requiredPoints": 0,
+    "requiredLevel": 1,
+    "approved": false,
+    "purchased": false,
+    "kidId": "kid-beyza-001"
+  }
+]

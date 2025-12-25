@@ -1,0 +1,207 @@
+[
+  {
+    "id": "kid-beyza-001",
+    "name": "Beyza",
+    "username": "Beyza",
+    "surname": "Sunnetci",
+    "age": 5,
+    "role": "kid",
+    "password": "b123",
+    "points": 94,
+    "totalPoints": 294,
+    "classId": "1",
+    "childrenIds": [],
+    "classIds": [],
+    "parentIds": [
+      "parent-cem-001"
+    ],
+    "teacherIds": []
+  },
+  {
+    "id": "kid-onur-002",
+    "name": "Onur",
+    "username": "Onur",
+    "surname": "Tekin",
+    "age": 6,
+    "role": "kid",
+    "password": "o123",
+    "points": 560,
+    "totalPoints": 640,
+    "classId": "2",
+    "childrenIds": [],
+    "classIds": [],
+    "parentIds": [
+      "851a4413-d7ea-48d6-a094-c575dc012fab"
+    ],
+    "teacherIds": []
+  },
+  {
+    "id": "parent-cem-001",
+    "name": "Cem",
+    "username": "Cem",
+    "surname": "Kagba",
+    "age": 40,
+    "role": "parent",
+    "password": "c123",
+    "points": 0,
+    "totalPoints": 0,
+    "childrenIds": [
+      "kid-beyza-001",
+      "kid-onur-002"
+    ],
+    "classIds": [],
+    "parentIds": [],
+    "teacherIds": []
+  },
+  {
+    "id": "teacher-selin-001",
+    "name": "Selin",
+    "username": "Selin",
+    "surname": "Samuray",
+    "age": 30,
+    "role": "teacher",
+    "password": "s123",
+    "points": 0,
+    "totalPoints": 0,
+    "childrenIds": [],
+    "classIds": [
+      "1",
+      "2"
+    ],
+    "parentIds": [],
+    "teacherIds": []
+  },
+  {
+    "id": "8b53f25d-1123-48e7-b099-3eb03a2fa6a5",
+    "name": "gök",
+    "username": "gök",
+    "surname": "öz",
+    "age": 10,
+    "role": "kid",
+    "password": "g123",
+    "points": 100,
+    "totalPoints": 100,
+    "classId": "2",
+    "childrenIds": [],
+    "classIds": [],
+    "parentIds": [],
+    "teacherIds": []
+  },
+  {
+    "id": "5838a910-635e-4045-a85d-d1b71952bb26",
+    "name": "mert",
+    "username": "mert",
+    "surname": "öztürk",
+    "age": 13,
+    "role": "kid",
+    "password": "m123",
+    "points": 431,
+    "totalPoints": 431,
+    "classId": "3",
+    "childrenIds": [],
+    "classIds": [],
+    "parentIds": [],
+    "teacherIds": []
+  },
+  {
+    "id": "851a4413-d7ea-48d6-a094-c575dc012fab",
+    "name": "ege",
+    "username": "ege",
+    "surname": "özadali",
+    "age": 0,
+    "role": "parent",
+    "password": "e123",
+    "points": 0,
+    "totalPoints": 0,
+    "childrenIds": [
+      "5838a910-635e-4045-a85d-d1b71952bb26",
+      "c9e2047b-f8ea-4292-9d13-88882813cfb3"
+    ],
+    "classIds": [],
+    "parentIds": [],
+    "teacherIds": []
+  },
+  {
+    "id": "33c25bf9-a321-454c-86c4-5678184beb66",
+    "name": "yiğit",
+    "username": "yiğit",
+    "surname": "tacir",
+    "age": 0,
+    "role": "teacher",
+    "password": "y123",
+    "points": 0,
+    "totalPoints": 0,
+    "childrenIds": [],
+    "classIds": [
+      "5",
+      "3"
+    ],
+    "parentIds": [],
+    "teacherIds": []
+  },
+  {
+    "id": "c9e2047b-f8ea-4292-9d13-88882813cfb3",
+    "name": "göktuğ",
+    "username": "göktuğ",
+    "surname": "eskigöçmen",
+    "age": 8,
+    "role": "kid",
+    "password": "g321",
+    "points": 109,
+    "totalPoints": 239,
+    "classId": "3",
+    "childrenIds": [],
+    "classIds": [],
+    "parentIds": [],
+    "teacherIds": []
+  },
+  {
+    "id": "5948698b-eaab-4ddb-aced-5c412e0b5e0d",
+    "name": "bigem",
+    "username": "bigem",
+    "surname": "tacir",
+    "age": 6,
+    "role": "kid",
+    "password": "b123",
+    "points": 200,
+    "totalPoints": 200,
+    "classId": "2",
+    "childrenIds": [],
+    "classIds": [],
+    "parentIds": [
+      "851a4413-d7ea-48d6-a094-c575dc012fab"
+    ],
+    "teacherIds": []
+  },
+  {
+    "id": "ecdea93c-e1ac-417d-8319-57d1b01eb72f",
+    "name": "deneme",
+    "username": "deneme",
+    "surname": "deneme",
+    "age": 0,
+    "role": "teacher",
+    "password": "a",
+    "points": 0,
+    "totalPoints": 0,
+    "childrenIds": [],
+    "classIds": [],
+    "parentIds": [],
+    "teacherIds": []
+  },
+  {
+    "id": "7b8c5aae-0e83-4a3d-9061-334b15eac5c3",
+    "name": "1",
+    "username": "1",
+    "surname": "1",
+    "age": 0,
+    "role": "kid",
+    "password": "1",
+    "points": 0,
+    "totalPoints": 0,
+    "classId": "",
+    "childrenIds": [],
+    "classIds": [],
+    "parentIds": [],
+    "teacherIds": []
+  }
+]

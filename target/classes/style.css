@@ -1,0 +1,610 @@
+/* =================================================================================
+   1. GENEL AYARLAR
+   ================================================================================= */
+.root {
+    -fx-font-family: 'Segoe UI', 'Arial', sans-serif;
+    -fx-background-color: #f8f9fa;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* =================================================================================
+   2. SEKMELER (TABS) - GARANTİ BOŞLUKLU (INSET YÖNTEMİ) 💊
+   ================================================================================= */
+.tab-pane {
+    -fx-padding: 20 20 0 20;
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab-header-area {
+    -fx-padding: 0 0 10 0;
+    -fx-min-height: 50px;
+}
+
+.tab-pane .tab-header-area .headers-region {
+    -fx-spacing: 0; 
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+/* SEKME (PASİF) */
+.tab {
+    -fx-background-color: white;
+    -fx-background-radius: 50; 
+    
+    /* Sağ tarafa boşluk için görünmez duvar */
+    -fx-border-color: transparent;
+    -fx-border-width: 0 25 0 0; 
+    -fx-background-insets: 0 25 0 0; 
+    
+    -fx-padding: 10 30; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 2);
+    -fx-cursor: hand;
+}
+
+.tab:hover {
+    -fx-background-color: #ecf0f1; 
+}
+
+/* SEKME (AKTİF - MAVİ) */
+.tab:selected {
+    -fx-background-color: #3498db; 
+    -fx-background-radius: 50;
+    
+    -fx-border-color: transparent;
+    -fx-border-width: 0 25 0 0;
+    -fx-background-insets: 0 25 0 0;
+    
+    -fx-padding: 10 30; 
+    -fx-effect: dropshadow(three-pass-box, rgba(52, 152, 219, 0.4), 8, 0, 0, 3);
+}
+
+.tab:selected:hover {
+    -fx-background-color: #3498db;
+    -fx-cursor: default;
+}
+
+.tab .tab-label {
+    -fx-font-weight: 800;
+    -fx-font-size: 13px;
+    -fx-text-fill: #95a5a6;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: white;
+}
+
+/* =================================================================================
+   3. FİLTRELER VE BUTONLAR
+   ================================================================================= */
+.filter-pane {
+    -fx-background-color: white;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, 3);
+    -fx-padding: 10 20;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.filter-label {
+    -fx-text-fill: #b2bec3;
+    -fx-font-weight: 800;
+    -fx-font-size: 11px;
+    -fx-text-transform: uppercase;
+    -fx-padding: 0 10 0 0;
+}
+
+.filter-toggle {
+    -fx-background-color: #f1f2f6;
+    -fx-text-fill: #636e72;
+    -fx-background-radius: 50;
+    -fx-padding: 8 20;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+.filter-toggle:hover {
+    -fx-background-color: #dfe6e9;
+    -fx-text-fill: #2d3436;
+}
+
+.filter-toggle:selected {
+    -fx-background-color: #2c3e50;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(44, 62, 80, 0.3), 5, 0, 0, 2);
+}
+.filter-toggle:selected:hover {
+    -fx-background-color: #2c3e50;
+    -fx-text-fill: white;
+    -fx-cursor: default;
+}
+
+.filter-combo {
+    -fx-background-color: #f1f2f6;
+    -fx-background-radius: 50;
+    -fx-padding: 2 10;
+}
+.filter-combo:hover {
+    -fx-background-color: #e6e8ec;
+    -fx-cursor: hand;
+}
+
+.button.filter-clear-btn {
+    -fx-background-color: #e74c3c; 
+    -fx-text-fill: white;          
+    -fx-background-radius: 100;    
+    -fx-min-width: 30px; -fx-max-width: 30px;
+    -fx-min-height: 30px; -fx-max-height: 30px;
+    -fx-padding: 0;
+    -fx-alignment: center;
+    -fx-content-display: center;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-font-weight: 900;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(231, 76, 60, 0.4), 5, 0, 0, 1);
+}
+.button.filter-clear-btn:hover {
+    -fx-background-color: #c0392b;
+}
+
+/* =================================================================================
+   4. TABLO (LİSTE) - SADECE HÜCRE İÇİ YAZI DÜZELTMESİ ✅
+   ================================================================================= */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* Başlık alanlarını şeffaf yapıp sağdaki gri kutuyu kaldırır */
+.table-view .column-header-background, 
+.table-view .column-header-background .filler,
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* Tablo Başlık Yazıları */
+.table-view .column-header .label {
+    -fx-text-fill: #95a5a6;
+    -fx-font-weight: 800;
+    -fx-font-size: 11px;
+    -fx-text-transform: uppercase;
+    -fx-padding: 0 0 10 15;
+}
+
+/* Satır Kartları */
+.table-row-cell:filled {
+    -fx-background-color: white;
+    -fx-background-insets: 6 10 6 10; 
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.03), 10, 0, 0, 2);
+    -fx-cell-size: 70px; 
+}
+
+/* Veri olmayan boş satırları tamamen görünmez yapar */
+.table-row-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-opacity: 0;
+}
+
+/* Boş hücrelerin içindeki çizgileri (grid lines) kaldırır */
+.table-row-cell:empty .table-cell {
+    -fx-border-color: transparent;
+}
+
+/* --- ÖNEMLİ: SADECE TABLO İÇİNDEKİ YAZILARIN STİLİ --- */
+.table-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 0 20;
+    -fx-alignment: CENTER_LEFT;
+    
+    /* Yazı ayarları */
+    -fx-font-family: 'Segoe UI Semibold', 'Arial', sans-serif;
+    -fx-font-size: 15px;      /* Yazıları biraz büyüttük */
+    -fx-text-fill: #2d3436;   /* Daha keskin, koyu gri/siyah tonu */
+    -fx-font-weight: 600;     /* Daha dolgun görünüm */
+}
+
+/* Eğer hücre içinde özel bir Label varsa onun da stilini sabitleyelim */
+.table-cell .label {
+    -fx-font-family: 'Segoe UI Semibold', sans-serif;
+    -fx-font-size: 15px;
+    -fx-text-fill: #2d3436;
+}
+
+/* Tablo içindeki butonların fontu genel buton stilinden gelsin diye dokunmuyoruz */
+.table-cell .button {
+    -fx-min-height: 32px;
+}
+
+/* =================================================================================
+   5. DİĞER (KARTLAR, BAŞLIKLAR)
+   ================================================================================= */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 15, 0, 0, 5);
+    -fx-padding: 25;
+    -fx-alignment: CENTER;
+}
+.card-title { -fx-font-size: 18px; -fx-font-weight: 800; -fx-text-fill: #2d3436; }
+.card-points { -fx-font-size: 36px; -fx-font-weight: 900; -fx-text-fill: #f1c40f; }
+.card-level { -fx-background-color: #f1f2f6; -fx-text-fill: #636e72; -fx-padding: 5 15; -fx-background-radius: 50; -fx-font-weight: bold; }
+
+.top-header {
+    -fx-background-color: white;
+    -fx-padding: 15 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, 3);
+}
+
+.app-title {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 28px;
+    -fx-font-weight: 900; 
+    -fx-text-fill: #2c3e50;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 0, 0, 0, 1);
+}
+
+.user-tag {
+    -fx-background-color: #f1f2f6; 
+    -fx-background-radius: 50; 
+    -fx-padding: 8 20; 
+    -fx-text-fill: #7f8c8d; 
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-effect: innerShadow(gaussian, rgba(0,0,0,0.02), 5, 0, 0, 1); 
+}
+
+/* =================================================================================
+   6. BUTONLAR
+   ================================================================================= */
+.button {
+    -fx-background-radius: 50;
+    -fx-padding: 8 20;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 1);
+    -fx-cursor: hand;
+}
+
+/* YENİLE */
+.button-refresh {
+    -fx-background-color: white; 
+    -fx-border-color: #3498db; 
+    -fx-background-radius: 50; -fx-border-radius: 50;
+    -fx-border-width: 2; 
+    -fx-text-fill: #3498db; 
+    -fx-font-weight: 900; 
+    -fx-font-size: 13px; 
+    -fx-padding: 8 20; 
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(52, 152, 219, 0.15), 5, 0, 0, 2);
+}
+.button-refresh:hover {
+    -fx-background-color: #3498db; 
+    -fx-text-fill: white; 
+    -fx-border-color: #3498db; 
+    -fx-background-radius: 50; -fx-border-radius: 50;
+    -fx-effect: dropshadow(three-pass-box, rgba(52, 152, 219, 0.4), 8, 0, 0, 3);
+}
+
+/* ÇIKIŞ */
+.button-danger {
+    -fx-background-color: white; 
+    -fx-border-color: #ff4757; 
+    -fx-text-fill: #ff4757; 
+    -fx-background-radius: 50; -fx-border-radius: 50;
+    -fx-border-width: 2; 
+    -fx-font-weight: 900; 
+    -fx-font-size: 13px;
+    -fx-padding: 8 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 71, 87, 0.2), 5, 0, 0, 2);
+}
+.button-danger:hover {
+    -fx-background-color: #ff4757; 
+    -fx-text-fill: white; 
+    -fx-border-color: #ff4757;
+    -fx-background-radius: 50; -fx-border-radius: 50;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 71, 87, 0.5), 8, 0, 0, 3);
+}
+
+/* YEŞİL */
+.button-secondary {
+    -fx-background-color: #2ecc71; 
+    -fx-text-fill: white;
+}
+.button-secondary:hover {
+    -fx-background-color: #27ae60; 
+    -fx-effect: dropshadow(three-pass-box, rgba(39, 174, 96, 0.5), 10, 0, 0, 3); 
+    -fx-scale-x: 1.05; -fx-scale-y: 1.05; 
+}
+
+/* MAVİ */
+.button-primary {
+    -fx-background-color: #3498db; 
+    -fx-text-fill: white;
+}
+.button-primary:hover {
+    -fx-background-color: #2980b9; 
+    -fx-effect: dropshadow(three-pass-box, rgba(41, 128, 185, 0.5), 10, 0, 0, 3); 
+    -fx-scale-x: 1.05; -fx-scale-y: 1.05; 
+}
+
+/* =================================================================================
+   7. FORM & POPUP
+   ================================================================================= */
+.form-card {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, 3);
+    -fx-padding: 25;
+}
+
+.input-label {
+    -fx-text-fill: #95a5a6;
+    -fx-font-weight: 800;
+    -fx-font-size: 10px;
+    -fx-text-transform: uppercase;
+    -fx-padding: 0 0 5 2; 
+}
+
+.modern-input {
+    -fx-background-color: #f1f2f6; 
+    -fx-background-radius: 15;
+    -fx-border-width: 0;
+    -fx-padding: 10 15; 
+    -fx-font-size: 13px;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+}
+.modern-input:focused, .modern-input:hover {
+    -fx-background-color: #e6e8ec;
+    -fx-effect: innerShadow(gaussian, rgba(0,0,0,0.05), 5, 0, 0, 1);
+}
+
+.date-picker { -fx-background-color: #f1f2f6; -fx-background-radius: 15; -fx-border-width: 0; }
+.date-picker > .arrow-button { -fx-background-color: transparent; }
+.date-picker > .text-field { -fx-background-color: transparent; -fx-padding: 10 15; }
+
+/* TITLED PANE */
+.titled-pane { -fx-text-fill: #2c3e50; -fx-font-weight: 800; -fx-font-size: 14px; }
+.titled-pane > .title {
+    -fx-background-color: white; -fx-background-radius: 15;
+    -fx-border-color: #dfe6e9; -fx-border-radius: 15; -fx-border-width: 1;
+    -fx-padding: 12 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.03), 5, 0, 0, 2);
+    -fx-cursor: hand;
+}
+.titled-pane > .title:hover { -fx-background-color: #f8f9fa; -fx-border-color: #3498db; }
+.titled-pane > .content {
+    -fx-background-color: transparent; -fx-border-color: transparent; -fx-border-width: 0; -fx-padding: 10 0 0 0; 
+}
+.titled-pane > .title > .arrow-button .arrow { -fx-background-color: #95a5a6; -fx-padding: 0 0 0 5; }
+
+/* POPUPS */
+.combo-box-popup .list-view, .date-picker-popup {
+    -fx-background-color: white; -fx-background-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 15, 0, 0, 5);
+}
+.combo-box-popup .list-cell {
+    -fx-background-color: transparent; -fx-text-fill: #2d3436;
+    -fx-padding: 10 15; -fx-font-weight: bold; -fx-font-size: 13px; -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+.combo-box-popup .list-cell:hover, .combo-box-popup .list-cell:filled:selected {
+    -fx-background-color: #f1f2f6; -fx-text-fill: #3498db; 
+}
+
+/* DATE PICKER */
+.date-picker-popup > .month-year-pane { -fx-background-color: white; }
+.date-picker-popup .day-cell { -fx-background-color: white; -fx-background-radius: 50; -fx-cursor: hand; }
+.date-picker-popup .day-cell:hover { -fx-background-color: #f1f2f6; }
+.date-picker-popup .day-cell:selected { -fx-background-color: #3498db; -fx-text-fill: white; }
+.date-picker-popup .today { -fx-background-color: #ecf0f1; -fx-text-fill: #3498db; -fx-border-color: #3498db; -fx-border-radius: 50; }
+
+.scroll-bar:vertical { -fx-background-color: transparent; -fx-pref-width: 8px; }
+.scroll-bar .thumb { -fx-background-color: #dfe6e9; -fx-background-radius: 100; }
+
+/* Leaderboard scroller: remove its default rectangular background */
+.leader-scroll {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+.leader-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+.leader-scroll .corner {
+    -fx-background-color: transparent;
+}
+
+/* Ensure the TilePane content doesn't paint a background */
+.tile-pane {
+    -fx-background-color: transparent;
+}
+
+/* Medal styles for top 3 in global leaderboard */
+.medal-gold {
+    -fx-text-fill: #f1c40f; /* gold */
+    -fx-font-weight: 900;
+}
+.medal-gold-label {
+    -fx-background-color: rgba(241,196,15,0.12);
+    -fx-background-radius: 999;
+    -fx-padding: 8 12;
+    -fx-border-color: rgba(241,196,15,0.25);
+    -fx-border-radius: 999;
+}
+.medal-silver {
+    -fx-text-fill: #bdc3c7; /* silver */
+    -fx-font-weight: 900;
+}
+.medal-silver-label {
+    -fx-background-color: rgba(189,195,199,0.12);
+    -fx-background-radius: 999;
+    -fx-padding: 8 12;
+    -fx-border-color: rgba(189,195,199,0.18);
+    -fx-border-radius: 999;
+}
+.medal-bronze {
+    -fx-text-fill: #b87333; /* bronze */
+    -fx-font-weight: 900;
+}
+.medal-bronze-label {
+    -fx-background-color: rgba(184,115,51,0.09);
+    -fx-background-radius: 999;
+    -fx-padding: 8 12;
+    -fx-border-color: rgba(184,115,51,0.15);
+    -fx-border-radius: 999;
+}
+
+/* Circular rank badge for medals to make emoji/icon visible */
+.medal-gold-rank {
+    -fx-background-color: #f1c40f;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: 900;
+    -fx-background-radius: 999;
+    -fx-min-width: 44px; -fx-min-height: 44px;
+    -fx-alignment: center;
+    -fx-padding: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 6, 0, 0, 2);
+}
+.medal-silver-rank {
+    -fx-background-color: #bdc3c7;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: 900;
+    -fx-background-radius: 999;
+    -fx-min-width: 44px; -fx-min-height: 44px;
+    -fx-alignment: center;
+    -fx-padding: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.06), 6, 0, 0, 2);
+}
+.medal-bronze-rank {
+    -fx-background-color: #b87333;
+    -fx-text-fill: white;
+    -fx-font-weight: 900;
+    -fx-background-radius: 999;
+    -fx-min-width: 44px; -fx-min-height: 44px;
+    -fx-alignment: center;
+    -fx-padding: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.06), 6, 0, 0, 2);
+}
+
+/* =================================================================================
+   8. MODERN POP-UP (DIALOG) - DÜZELTİLMİŞ
+   ================================================================================= */
+.custom-dialog-root {
+    -fx-background-color: transparent; 
+    -fx-padding: 30; /* Gölge için pay bırakıyoruz */
+}
+
+.custom-dialog {
+    -fx-background-color: white;
+    -fx-background-radius: 40; /* Daha yuvarlak köşeler */
+    -fx-border-radius: 40;
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    /* Gölgeyi daha yumuşak ve aşağı yayvan yaptık */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.3, 0, 8);
+    -fx-padding: 30;
+    -fx-alignment: CENTER;
+    -fx-min-width: 380px;
+    -fx-max-width: 400px;
+}
+
+.dialog-icon {
+    -fx-font-size: 54px;
+    -fx-padding: 0 0 10 0;
+}
+
+.dialog-title {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 24px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #2d3436;
+}
+
+.dialog-message {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 15px;
+    -fx-text-fill: #636e72;
+    -fx-text-alignment: CENTER;
+    -fx-wrap-text: true;
+    -fx-line-spacing: 4px;
+}
+
+.dialog-btn {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+    -fx-font-size: 14px;
+    -fx-padding: 12 35;
+    -fx-background-radius: 50;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(52, 152, 219, 0.3), 10, 0, 0, 4);
+}
+.dialog-btn:hover {
+    -fx-background-color: #2980b9;
+    -fx-scale-x: 1.05; -fx-scale-y: 1.05;
+}
+
+/* Hata Butonu */
+.dialog-btn-error {
+    -fx-background-color: #ff4757;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 71, 87, 0.3), 10, 0, 0, 4);
+}
+.dialog-btn-error:hover { -fx-background-color: #eb2f06; }
+
+/* Kutlama Butonu (Yeşil/Altın) */
+.dialog-btn-celebrate {
+    -fx-background-color: #2ecc71;
+    -fx-effect: dropshadow(three-pass-box, rgba(46, 204, 113, 0.3), 10, 0, 0, 4);
+}
+.dialog-btn-celebrate:hover { -fx-background-color: #27ae60; }
+
+/* =================================================================================
+   9. MODERN LOGIN EKRANI 🔐
+   ================================================================================= */
+.login-bg {
+    /* Hafif degrade arka plan */
+    -fx-background-color: linear-gradient(to bottom right, #dfe6e9, #f1f2f6);
+}
+
+.login-card {
+    -fx-background-color: white;
+    -fx-background-radius: 40;
+    -fx-border-radius: 40;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 30, 0, 0, 10); /* Derin gölge */
+    -fx-padding: 50;
+    -fx-alignment: CENTER;
+    -fx-min-width: 400px;
+    -fx-max-width: 400px;
+}
+
+.login-title {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 36px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #2c3e50;
+}
+
+.login-subtitle {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #95a5a6;
+    -fx-padding: 0 0 20 0;
+}
+
+.link-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3498db;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-underline: true;
+}
+.link-button:hover {
+    -fx-text-fill: #2980b9;
+}

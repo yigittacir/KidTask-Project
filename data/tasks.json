@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "taskName": "lol oyna",
+    "description": "çok",
+    "dueDate": "2025-12-25",
+    "points": 200,
+    "status": "COMPLETED",
+    "frequency": "Weekly",
+    "assignedBy": "Cem",
+    "kidId": "kid-onur-002"
+  },
+  {
+    "id": 2,
+    "taskName": "mat",
+    "description": "çöz",
+    "dueDate": "2025-12-24",
+    "points": 140,
+    "status": "COMPLETED",
+    "frequency": "Daily",
+    "assignedBy": "Selin",
+    "kidId": "kid-onur-002"
+  },
+  {
+    "id": 3,
+    "taskName": "fizik",
+    "description": "çöz",
+    "dueDate": "2025-12-24",
+    "points": 99,
+    "status": "COMPLETED",
+    "frequency": "Daily",
+    "assignedBy": "yigit",
+    "kidId": "c9e2047b-f8ea-4292-9d13-88882813cfb3"
+  },
+  {
+    "id": 4,
+    "taskName": "deneme2,",
+    "description": "2",
+    "dueDate": "2025-12-24",
+    "points": 140,
+    "status": "COMPLETED",
+    "frequency": "Daily",
+    "assignedBy": "ege",
+    "kidId": "c9e2047b-f8ea-4292-9d13-88882813cfb3"
+  },
+  {
+    "id": 5,
+    "taskName": "okula git",
+    "description": "git",
+    "dueDate": "2025-12-18",
+    "points": 100,
+    "status": "COMPLETED",
+    "frequency": "General",
+    "assignedBy": "Cem",
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 6,
+    "taskName": "sosyal",
+    "description": "çöz",
+    "dueDate": "2025-12-19",
+    "points": 200,
+    "status": "COMPLETED",
+    "frequency": "Weekly",
+    "assignedBy": "Selin",
+    "kidId": "kid-onur-002"
+  },
+  {
+    "id": 7,
+    "taskName": "kimya",
+    "description": "kim",
+    "dueDate": "2025-12-19",
+    "points": 200,
+    "status": "COMPLETED",
+    "frequency": "Weekly",
+    "assignedBy": "Selin",
+    "kidId": "5948698b-eaab-4ddb-aced-5c412e0b5e0d"
+  },
+  {
+    "id": 8,
+    "taskName": "132123",
+    "description": "123",
+    "dueDate": "2025-12-17",
+    "points": 10,
+    "status": "TODO",
+    "frequency": "General",
+    "assignedBy": "ege",
+    "kidId": "5948698b-eaab-4ddb-aced-5c412e0b5e0d"
+  },
+  {
+    "id": 9,
+    "taskName": "d12",
+    "description": "...",
+    "dueDate": "2025-12-17",
+    "points": 100,
+    "status": "COMPLETED",
+    "frequency": "General",
+    "assignedBy": "Cem",
+    "kidId": "kid-onur-002"
+  },
+  {
+    "id": 10,
+    "taskName": "dddd",
+    "description": "...",
+    "dueDate": "2025-12-17",
+    "points": 100,
+    "status": "COMPLETED",
+    "frequency": "General",
+    "assignedBy": "Cem",
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 11,
+    "taskName": "dadd",
+    "description": "...",
+    "dueDate": "2025-12-17",
+    "points": 44,
+    "status": "COMPLETED",
+    "frequency": "General",
+    "assignedBy": "Cem",
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 12,
+    "taskName": "asdasdasd",
+    "description": "...",
+    "dueDate": "2025-12-17",
+    "points": 4567,
+    "status": "TODO",
+    "frequency": "General",
+    "assignedBy": "Cem",
+    "kidId": "kid-onur-002"
+  },
+  {
+    "id": 13,
+    "taskName": "aaa",
+    "description": "...",
+    "dueDate": "2025-12-18",
+    "points": 54,
+    "status": "COMPLETED",
+    "frequency": "General",
+    "assignedBy": "Cem",
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 14,
+    "taskName": "deneme",
+    "description": "...",
+    "dueDate": "2025-12-23",
+    "points": 500,
+    "status": "PENDING",
+    "frequency": "General",
+    "assignedBy": "Cem",
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 15,
+    "taskName": "denemee",
+    "description": "deneme",
+    "dueDate": "2025-12-25",
+    "points": 50,
+    "status": "PENDING",
+    "frequency": "General",
+    "assignedBy": "Cem",
+    "kidId": "kid-beyza-001"
+  },
+  {
+    "id": 16,
+    "taskName": "Matematik ödevi",
+    "description": "15 soru çöz",
+    "dueDate": "2026-01-01",
+    "points": 50,
+    "status": "COMPLETED",
+    "frequency": "General",
+    "assignedBy": "Cem",
+    "kidId": "kid-beyza-001"
+  }
+]
